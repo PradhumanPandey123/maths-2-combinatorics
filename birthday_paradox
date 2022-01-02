@@ -1,0 +1,19 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	float x = 1.0;
+	// shows that 2ppl have same birth day
+	int people=0;
+	float num = 365;
+	float denom = 365;
+	float p;
+	cin>>p;
+	while(x>1-p){
+		x=x*(num)/denom;
+		num--;
+		people++;
+		cout<<x<<endl;
+	}
+	
+}
